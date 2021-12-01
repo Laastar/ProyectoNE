@@ -1,0 +1,10 @@
+
+create database ne2021;
+use ne2021;
+CREATE TABLE `videojuego` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `nombre` VARCHAR(250) NOT NULL , `precio` FLOAT(11) NOT NULL , `descripcion` VARCHAR(500) NOT NULL , `imagen` VARCHAR(1000) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+INSERT INTO videojuego (id, nombre, precio,descripcion,imagen) VALUES ('1', 'Mario Kart 8 Deluxe', '1025.00', 'Con Mario Kart 8 Deluxe para el Nintendo Switch ¡Pasa largas horas de diversión! La renovada versión de este clásico juego de carreras trae para ti la posibilidad de jugar en línea con hasta 12 jugadores y de forma local con 8 de tus amigos.', 'https://www.nintendo.com//content/dam/noa/es_LA/games/switch/m/mario-kart-8-deluxe-switch/mario-kart-8-deluxe-switch-hero.jpg'), ('2', 'Metal Slug XX', '1000', 'Metal Slug XX es una modificación mejorada de Metal Slug 7, publicado en diciembre de 2009 para la Playstation Portable, Xbox Live Arcade con nuevos contenidos, PlayStation 4 y Microsoft Windows. Esta versión cuenta con contenido adicional así como un modo multijugador', 'https://cdn.cloudflare.steamstatic.com/steam/apps/975680/capsule_616x353.jpg?t=1572595760');
+INSERT INTO videojuego (id, nombre, precio,descripcion,imagen) VALUES ('3', 'Call of Duty: Modern Warfare', '2500', 'Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado por Infinity Ward y publicado por Activision. Es el decimosexto juego de la saga Call of Duty y es un reinicio de la serie Modern Warfare.​​​ Fue lanzado el 25 de octubre de 2019.', 'https://image.api.playstation.com/cdn/UP0002/CUSA15239_00/CpIKiv8qH20F6my7atxQIzW0zJ79WiB0.png'), ('4', 'Guitar Hero III: Legends of Rock', '3500', 'Guitar Hero III: Legends of Rock es un videojuego de música y el tercer título de la serie Guitar Hero.', 'https://uvejuegos.com/img/juegos/25335/13_g.jpg');
+
+
+use ne2021;
+CREATE TABLE `respuestas` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `puntuacion` INT(4) NOT NULL, `comentario` VARCHAR(250) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
